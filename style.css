@@ -9,3 +9,106 @@ body{
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.menu{
+	background-color: rgb(246,246,246);
+	color: gray;
+	width: 270px;
+	height: 100vh;
+	border-right: 3px solid #d2d2d2 ;
+}
+
+.menu h2{
+	display: block;
+  margin-left: 30px;
+	color: black;
+}
+
+.menu_list{
+	padding: 0 30px 0 15px;
+}
+
+.menu_item{
+	display: block;
+	margin: 15px 0 15px 0;
+	padding: 10px 0 10px 0;
+}
+
+.menu_item:hover{
+	background-color: #c32056;
+	color: white;
+}
+
+.menu_item span{
+	margin-left: 15px;
+}
+
+.menu_item a{
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+.dashboard_menu_img{
+	background-image: url(../assets/menu/dashboard_gray.svg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.menu_item:hover .dashboard_menu_img{
+	background-image: url(../assets/menu/dashboard_white.svg);
+}
+
+.profile_menu_img{
+	background-image: url(../assets/menu/profile_gray.svg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.menu_item:hover .profile_menu_img{
+	background-image: url(../assets/menu/profile_white.svg);
+}
+
+.maps_menu_img{
+	background-image: url(../assets/menu/maps_gray.svg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.menu_item:hover .maps_menu_img{
+	background-image: url(../assets/menu/maps_white.svg);
+}
+
+.notify_meny_img{
+	background-image: url(../assets/menu/notify_gray.svg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.menu_item:hover .notify_meny_img{
+	background-image: url(../assets/menu/notify_white.svg);
+}
+
+.support_menu_img{
+	background-image: url(../assets/menu/support_gray.svg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.menu_item:hover .support_menu_img{
+	background-image: url(../assets/menu/support_white.svg);
+}
