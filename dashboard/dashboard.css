@@ -2,12 +2,15 @@ body{
 	display: flex;
 }
 
+main{
+	background: #eaeaea;
+}
+
 .page-title{
 	margin-left: 50px;
 }
 
 .indicators{
-	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	margin: 50px 0 0 0;
@@ -45,11 +48,22 @@ body{
 	background: green;
 }
 
+.orange{
+	background: orange;
+}
+
+.blue{
+	background: #274d97;
+}
+
+.pink{
+	background: #c32056;
+}
+
 .indicator-block{
 	width: 350px;
-	height: 150px;
 	margin-right: 50px;
-	border: 3px solid black;
+	background: white;
 }
 
 .indicator-head{
@@ -59,6 +73,8 @@ body{
 
 .indicator-block:hover{
 	box-shadow: 6px 10px 3px -3px #ddd;
+	transform: translateY(-10px);
+	cursor: pointer;
 }
 
 .indicator-name-info {
@@ -80,7 +96,7 @@ body{
 	margin: 0 10px 0 10px;
 }
 .indicator-footer-text{
-	font-size: 0.5em;
+	font-size: 0.7em;
 	display: flex;
 	align-items: center;
 	margin: 10px 0 10px 10px;
@@ -88,4 +104,127 @@ body{
 
 .indicator-footer-icon{
 	width: 10px;
+	margin-right: 15px;
+}
+
+.charts{
+	margin: 50px 0 0 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.charts-block{
+	width: 450px;
+	padding: 0 10px 0 10px;
+	background: white;
+}
+
+.charts-block-img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	position: relative;
+	top: -20px;
+}
+
+.charts-block-img img{
+	width: 80%;
+}
+
+.charts-block-text{
+	margin-bottom: 10px;
+}
+
+.charts-block-footer {
+	font-size: 0.7em;
+	display: flex;
+	align-items: center;
+	margin: 10px 0 10px 0;
+}
+
+.charts-block-footer-icon {
+	width: 10px;
+  margin-right: 15px;
+}
+
+.tasks-and-employees {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.tasks {
+	padding: 0 10px 0 10px;
+	background: white;
+}
+
+.tasks-header{
+	height: 50px;
+	position: relative;
+	top: -20px;
+}
+
+.tasks-menu {
+	color: white;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tasks-menu-item {
+	display: flex;
+	margin-left:25px ;
+}
+
+.tasks-menu-item:hover{
+	background: #dead49;
+	cursor: pointer;
+}
+
+.tasks-menu-item img{
+	margin-right: 15px;
+}
+
+.tasks-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.tasks-item-text{
+	width: calc(100% - 120px);
+}
+.mr10{
+	margin-right: 10px;
+}
+
+.tasks-item-icons{
+	width: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tasks-item-icons img{
+	width: 25px;
+}
+
+.tasks-and-employees-bl-wid{
+	width: 725px;
+}
+
+.employees{
+	background: white;
+	padding: 0 10px 0 10px;
+}
+
+.employees-header{
+	height: 50px;
+	position: relative;
+	top: -20px;
+}
+
+.employees-item{
+	display: flex;
 }
