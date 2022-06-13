@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Profile</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="user_profile.css">
+</head>
+<body>
+	<header>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+				<span></span>
+			</label>
+			<h2 class="page-title">User Profile</h2>
+			<ul class="menu__box">
+			<h2 class="menu_title">Company</h2>
+			<hr>
+				<li><a class="menu__item" href="../dashboard/dashboard.html"><div class="dashboard_menu_img"></div><p>Dashboard</p></a></li>
+				<li><a class="menu__item" href="../user profile/user_profile.html"><div class="profile_menu_img"></div><p>User profile</p></a></li>
+				<li><a class="menu__item" href="#"><div class="maps_menu_img"></div><p>Maps</p></a></li>
+				<li><a class="menu__item" href="#"><div class="notify_menu_img"></div><p>Notifications</p></a></li>
+				<li><a class="menu__item" href="#"><div class="support_menu_img"></div><p>Support</p></a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<h2 class="page-title-large">User Profile</h2>
+		<div class="blocks">
+			<div class="main-block">
+				<div class="main-block-header">
+					<p class="main-block-title">Edit Profile</p>
+					<p class="main-block-description">Complete your profile</p>
+				</div>
+				<form action="#">
+					<div class="first_line">
+						<div class="first_line-company">
+							<label for="company">Company *</label>
+							<input class="input-field" type="text"  id="company" required>
+						</div>
+						<div class="first_line-username">
+							<label for="username">Username *</label>
+							<input class="input-field" type="text" 	id="username" required>
+						</div>
+						<div class="first_line-email">
+							<label for="email">Email address *</label>
+							<input class="input-field" type="email" required id="email">
+						</div>
+					</div>
+					<div class="second_line">
+						<div class="second_line-name">
+							<label for="name">First name *</label>
+							<input class="input-field" type="text" required id="name">
+						</div>
+						<div class="second_line-surname">
+							<label for="surname">Last name *</label>
+							<input class="input-field" type="text" required	id="surname">
+						</div>
+					</div>
+					<div class="third_line">
+						<div class="third_line-address">
+							<label for="address">Address *</label>
+							<input class="input-field" type="text" required id="address">
+						</div>
+					</div>
+					<div class="fourth_line">
+						<div class="fourth_line-city">
+							<label for="city">City *</label>
+							<input class="input-field" type="text" required id="city">
+						</div>
+						<div class="fourth_line-country">
+							<label for="country">Country *</label>
+							<input class="input-field" type="text" required	id="country">
+						</div>
+						<div class="fourth_line-index">
+							<label for="index">Postal code *</label>
+							<input class="input-field" type="number" required id="index">
+						</div>
+					</div>
+					<div class="fifth_line">
+						<div class="fifth_line-about">
+							<label for="about">About me</label>
+							<textarea name="about" id="about"  rows="6" class="text_field">
+								
+							</textarea>
+						</div>
+					</div>
+					<input type="submit" value="UPDATE PROFILE" class="update_btn">
+				</form>
+			</div>
+			<div class="side-block">
+				<div class="avatar_wrapper">
+					<img src="assets/account_avatar.jpg" alt="account_avatar" class="acc_avatar">
+				</div>
+				<p class="profile-job">ce0 / co-founder</p>
+				<p class="profile-name">Alec Thompson</p>
+				<p class="profile-about">
+					Don't be scared of the truth because we need
+					to restart the human foundation in truth And I
+					love you like Kanye loves Kanye I love Rick
+					Ovews' bed design but the back is...
+				</p>
+			</div>
+		</div>	
+		<hr class="footer-septum">
+		<div class="footer-wrapper">
+			<div class="footer-content">
+				<div class="footer-menu">
+					<a href="#">About</a>
+					<a href="#">Blog</a>
+					<a href="#">Licenses</a>
+				</div>
+				<div class="footer-side_text">
+					<p>2022 - made with love</p>
+				</div>
+			</div>
+		</div>	
+	</main>
+		
+</body>
+</html>
