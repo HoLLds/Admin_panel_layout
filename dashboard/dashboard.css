@@ -82,6 +82,11 @@ main{
 	box-shadow: 6px 10px 3px -3px #ddd;
 	transform: translateY(-10px);
 	cursor: pointer;
+	transition-duration: .5s;
+}
+
+.indicator-block:not(:hover){
+	transition-duration: .5s;
 }
 
 .indicator-name-info {
@@ -129,6 +134,11 @@ main{
 	box-shadow: 6px 10px 3px -3px #ddd;
 	transform: translateY(-10px);
 	cursor: pointer;
+	transition-duration: .5s;
+}
+
+.charts-block:not(:hover){
+	transition-duration: .5s;
 }
 
 .charts-block-title{
