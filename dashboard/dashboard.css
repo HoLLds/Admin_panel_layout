@@ -4,27 +4,32 @@ body{
 
 main{
 	background: #eaeaea;
+	width: 100%;
+	background-size: cover;
 }
 
 .page-title{
-	margin-left: 50px;
+	margin-top: 15px;
+	margin-left: 3.5%;
 }
 
 .indicators{
 	display: flex;
-	justify-content: space-around;
-	margin: 50px 0 0 0;
+	width: 95%;
+	margin: 50px auto;
 }
 
 .left-blocks{
 	display: flex;
-	justify-content: space-around;
-	margin-left: 50px;
+	width: 50%;
+	justify-content: space-between;
+	margin-right: 5%;
 }
 
 .right-blocks{
 	display: flex;
-	justify-content: space-around;
+	width: 50%;
+	justify-content: space-between;
 }
 
 .indicator-icon{
@@ -39,7 +44,6 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 10px;
 	position: relative;
 	top: -25px;
 }
@@ -61,9 +65,9 @@ main{
 }
 
 .indicator-block{
-	width: 350px;
-	margin-right: 50px;
+	width: 45%;
 	background: white;
+	padding: 0 10px 0 10px;
 }
 
 .indicator-head{
@@ -80,7 +84,6 @@ main{
 .indicator-name-info {
 	display: flex;
 	flex-direction: column;
-	margin-right: 10px;
 }
 
 .indicator-name{
@@ -89,17 +92,16 @@ main{
 }
 
 .indicator-info{
-	font-size: 1.2em;
+	font-size: 0.9em;
+	font-weight: 700;
+	align-self: flex-end;
 }
 
-.indicator-block hr{
-	margin: 0 10px 0 10px;
-}
 .indicator-footer-text{
 	font-size: 0.7em;
 	display: flex;
 	align-items: center;
-	margin: 10px 0 10px 10px;
+	margin: 10px 0 10px 0;
 }
 
 .indicator-footer-icon{
@@ -108,15 +110,22 @@ main{
 }
 
 .charts{
-	margin: 50px 0 0 0;
+	margin: 50px auto;
+	width: 95%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .charts-block{
-	width: 450px;
+	width: 30%;
 	padding: 0 10px 0 10px;
 	background: white;
+}
+
+.charts-block:hover{
+	box-shadow: 6px 10px 3px -3px #ddd;
+	transform: translateY(-10px);
+	cursor: pointer;
 }
 
 .charts-block-img{
@@ -129,7 +138,8 @@ main{
 }
 
 .charts-block-img img{
-	width: 80%;
+	width: 90%;
+	height: 70%;
 }
 
 .charts-block-text{
@@ -211,7 +221,7 @@ main{
 }
 
 .tasks-and-employees-bl-wid{
-	width: 725px;
+	width: 45%;
 }
 
 .employees{
@@ -227,4 +237,73 @@ main{
 
 .employees-item{
 	display: flex;
+}
+
+.employees-item p{
+	width: 20%;
+	margin: 5px 2% 5px 25px;
+}
+
+@media screen and (min-width:800px) and (max-width:1000px){
+	.indicators{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-blocks{
+		width: 100%;
+		margin: 0 auto 50px auto;
+	}
+
+	.right-blocks{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.tasks-and-employees{
+		flex-direction: column;
+	}
+
+	.tasks-and-employees-bl-wid{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.tasks{
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (min-width:650px) and (max-width:800px){
+	.indicators{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-blocks{
+		width: 100%;
+		margin: 0 auto 50px auto;
+	}
+
+	.right-blocks{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.tasks-and-employees{
+		flex-direction: column;
+	}
+
+	.tasks-and-employees-bl-wid{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.tasks{
+		margin-bottom: 50px;
+	}
+
+	.menu{
+		display: none;
+	}
 }
