@@ -502,3 +502,9 @@ body{
     width: 50%;
 	}
 }
+
+@media screen and (max-width:450px){
+	.footer-wrapper{
+		font-size: 0.8em;
+	}
+}

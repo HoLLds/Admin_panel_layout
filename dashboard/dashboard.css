@@ -201,22 +201,31 @@ main{
 	color: white;
 	height: 100%;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	margin-left: 5%;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+	list-style-type: none;
 }
 
-.tasks-menu-item {
+.tasks-menu-item{
+	text-decoration: none;
+	color: white;
+	padding: 6px;
+	border-radius: 20px;
+}
+
+.tasks-menu-item li{
 	display: flex;
-	margin-left: 5%;
+	width: 23%;
 }
 
 .tasks-menu-item:hover{
 	background: #dead49;
-	cursor: pointer;
 }
 
-.tasks-menu-item img{
-	margin-right: 1%;
+.tasks-menu-item li img{
+	margin-right: 6%;
 }
 
 .tasks-item {
